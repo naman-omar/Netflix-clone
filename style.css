@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    font-weight: 900;
+}
+
+.background {
+    background-image: url("net_back.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    height: 100%;
+    width: 100vw
+}
+
+.header {
+    height: 670px;
+    width: 100vw;
+    position: relative;
+    border-bottom: 9px solid rgb(40, 40, 40);
+    background-color: black;
+}
+
+.nav {
+    height: 100px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.logo img {
+    height: 120px;
+    width: 240px;
+    margin-right: 47vw;
+}
+
+.buttons button {
+    height: 4.8vh;
+    border-radius: 5px;
+    font-weight: 540;
+}
+
+#english {
+    background-color: #303030;
+    width: 120px;
+    color: white;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+#english select {
+    color: white;
+    background-color: #353535;
+    border: none;
+    font-size: 2vh;
+}
+
+#signin {
+    background-color: #e50914;
+    width: 75px;
+    color: white;
+    font-size: 2vh;
+    font-weight: 600;
+    border: 1px solid #e50914;
+    margin-left: 20px;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    top: max(19vw,150px);
+    left: 7vw;
+    right:7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 23px;
+    line-height: 7vh;
+}
+
+.content #main {
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#ready {
+    font-size: 20px;
+}
+
+.content-button {
+    margin-top: 8px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#email {
+    height: 6.7vh;
+    width: 315px;
+    border-radius: 4px;
+    padding: 0 1.5vw;
+    font-size: 2vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgb(150, 150, 150);
+}
+
+#started {
+    height: 7vh;
+    width: 210px;
+    border-radius: 4px;
+    background-color: #e50914;
+    font-size: 2.8vh;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 600;
+    border: 2px solid #e50914;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:646px){
+    #started{
+        margin-top: 10px;
+    }
+    .logo img {
+       margin-right: 15vw;
+    }
+    .content #main {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    #ready{
+        font-size: 14px;
+    }
+    .content{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:864px){
+    .logo img{
+        margin-right: 20vw;
+    }
+
+}
+
+@media screen and (max-width:575px){
+    .logo img{
+        margin-right: 0;
+    }
+    #english{
+        width: 100px;
+    }
+    #english select{
+        font-size: 1.5vh;
+    }
+    #signin{
+        width: 60;
+        font-size: 1.8vh;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:430px){
+
+    #english{
+        width: 80px;
+    }
+    #english select{
+        font-size: 1.4vh;
+    }
+    #signin{
+        width: 60px;
+        font-size: 1.8vh;
+        margin-left: 5px;
+    }
+    .logo img{
+        height: 90+px;
+        width: 180px;
+    }
+}
+
+.content-button span {
+    margin-left: 10px;
+}
+
+main {
+    background-color: black;
+    width: 100vw
+}
+
+.first {
+    position:relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:75vh;
+    border-bottom: 9px solid rgb(40, 40, 40);
+    margin:auto;
+}
+
+.main-content {
+    color: white;
+    position: relative;
+    bottom: 2vw;
+    margin-left: 10vw;
+}
+
+.tv img {
+    position: relative;
+    bottom: 20px;
+    height: 31vw;
+    width: 38vw;
+    z-index: 2;
+    margin-left:5vw;
+    margin-right: 9vw;
+}
+
+.main-content> :nth-child(1) {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 8vh;
+}
+
+.main-content> :nth-child(4) {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 23px;
+    line-height: 4.5vh;
+    margin-top: 20vh;
+}
+
+.tv video {
+    height: 25vw;
+    width: 30vw;
+    position: absolute;
+    right: 12vw;
+    margin-left:5vw;
+    overflow: hidden;
+}
+
+.second {
+    border-bottom: 9px solid rgb(40, 40, 40);
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stranger img {
+    height: 400px;
+    width: 580px;
+    position:relative;
+    top: 30px;
+}
+
+.sec-content {
+    color: white;
+}
+
+.sec-content> :nth-child(1) {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    line-height:60px;
+}
+
+.sec-content> :nth-child(4) {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+#box{
+    display:flex;
+    height: 90px;
+    width: 320px;
+    background-color: black;
+    border-radius: 8px;
+    align-items: center;
+    border: 2px solid rgb(80,80,80);
+    position: relative;
+    bottom: 90px;
+    left:125px;
+}
+
+#box img{
+    height: 80px;
+    width:60px;
+    position:relative;
+    left: 8px;
+    top: 3px;
+}
+
+#str{
+    line-height:20px;
+    margin-left: 25px;
+}
+
+#str :nth-child(1){
+    color: white;
+    font-size: 15px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 600;
+}
+
+#str :nth-child(2){
+    color: blue;
+    font-size: 13px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+}
+
+#box i{
+    color: white;
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.first #saif{
+    height: 25vw;
+    width: 30vw;
+    position: absolute;
+    right: 15vw;
+    margin-left:5vw;
+    overflow: hidden;
+}
+
+.third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:75vh;
+    border-bottom: 9px solid rgb(40, 40, 40);
+    max-width: 90%;
+    margin:auto;
+}
+
+.main-content-third {
+    color: white;
+    position: relative;
+    bottom: 2vw;
+    margin-left: 2vh;
+    margin-right: 8vw;
+}
+
+.main-content-third> :nth-child(1) {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height:8vh;
+}
+
+.main-content-third> :nth-child(4) {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 23px;
+    line-height: 4.5vh;
+}
+
+section{
+    width: 100vw;
+    height: 130vh;
+    background-color: black;
+    border-bottom: 9px solid rgb(40, 40, 40);
+}
+
+#head{
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    color: white;
+    text-align:center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.boxes .plus{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.boxes .cross{
+    display: none;
+}
+
+.boxes .questions{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(40, 40, 40);
+    height: 80px;
+    color:white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes .questions p{
+    width:70vw;
+}
+
+.boxes .questions:hover{
+    background-color: rgb(80,80,80);
+}
+
+.boxes{
+    margin-bottom: 9px;
+    position:relative;
+    cursor: pointer;
+}
+
+.boxes .answers{
+    margin: auto;
+    background-color: rgb(40, 40, 40);
+    color:white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.boxes .one{
+    width: 80%;
+    height: 300px;
+    display:none;
+}
+
+.boxes .three{
+    width: 80%;
+    height: 300px;
+    display:none;
+}
+
+.boxes .two{
+    width: 80%;
+    height: 120px;
+    display: none;
+}
+
+.boxes .four{
+    width: 80%;
+    height: 120px;
+    display: none;
+}
+
+.boxes .five{
+    width: 80%;
+    height: 120px;
+    display: none;
+}
+
+.boxes .six{
+    width: 80%;
+    height: 230px;
+    display:none;
+}
+
+.boxes input{
+    display: none;
+}
+
+.section-content{
+    text-align: center;
+}
+
+.section-content p{
+    padding-top: 6vh;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+} 
+
+footer{
+    height: 60vh;
+    width: 100vw;
+    color: rgb(200,200,200);
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    background-color: black;
+}
+
+footer p{
+    position: relative;
+    left: 16vw;
+    top: 3.5vw;
+}
+
+footer .list{
+    display:flex;
+    font-size: 1.8vh;
+    margin:auto;
+    max-width: 80%;
+    justify-content: space-around;
+}
+
+footer ul{
+    padding: 60px;
+    list-style-type: none;
+}
+
+footer ul li{
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-decoration:none;
+}
+
+footer ul a{
+    color: rgb(200,200,200);
+}
+
+#english-btn {
+    color: white;
+    border: 1px solid rgb(150, 150, 150);
+    padding: 10px 13px 10px 13px;
+    border-radius: 5px; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+#english-btn select {
+    color: white;
+    background-color: rgba(30,30,30,0.2);
+    border: none;
+    font-size: 2vh;
+}
+
+footer li a:active{
+    color:#e50914;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    text-decoration: none;
+}
+
+#signin:hover{
+    cursor:pointer;
+    background-color: #c11119;
+    border: 1px solid #c11119;
+}
+
+#started:hover{
+    cursor:pointer;
+    background-color: #c11119;
+    border: 2px solid #c11119;
+}
+
+/* .questions #check-one:checked ~ .one{
+    display: flex;
+}
+
+#check-one:checked ~ .check-five cross{
+    display: block;
+}
+
+#check-one:checked ~ .check-five plus{
+    display: none;
+}  */
